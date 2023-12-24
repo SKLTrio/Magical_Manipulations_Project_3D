@@ -1407,7 +1407,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.9, z: 0}
-  m_LocalScale: {x: 1, y: 1.25, z: 1.5}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1766192993821455519}
@@ -1459,8 +1459,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1.75, z: 0.8}
-  m_Center: {x: -0.75, y: -0.6, z: 0}
+  m_Size: {x: 0.8, y: 1.75, z: 2}
+  m_Center: {x: 0, y: -0.6, z: -0.75}
 --- !u!95 &7770597716784141524
 Animator:
   serializedVersion: 7
@@ -1495,11 +1495,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5805d38688021468c20af1f89e8ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk_Speed: 2
-  Chase_Speed: 3
-  Turn_Speed: 5
-  Walk_Point_Radius: 35
+  Walk_Speed: 1.5
+  Chase_Speed: 2.5
+  Turn_Speed: 1
+  Walk_Point_Radius: 30
   Chase_Distance: 10
+  Crystal_Chase_Distance: 0.25
   Obstacle_Avoidance_Distance: 10
   Monster_Animator: {fileID: 7770597716784141524}
 --- !u!1 &8860650402984268671
@@ -1526,7 +1527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8860650402984268671}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1539,7 +1540,7 @@ Transform:
   - {fileID: 5773963349300191832}
   - {fileID: 3629872380603959529}
   m_Father: {fileID: 8897762933790843042}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &9061772657943239916
 GameObject:
   m_ObjectHideFlags: 0

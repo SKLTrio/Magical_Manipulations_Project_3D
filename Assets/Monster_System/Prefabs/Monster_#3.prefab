@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 4918761704869969570}
   - component: {fileID: 7695401832901425435}
   - component: {fileID: 6854198516667659176}
+  - component: {fileID: 5641720961994159258}
   m_Layer: 0
   m_Name: Monster_#3
   m_TagString: Untagged
@@ -354,6 +355,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5641720961994159258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211230244836334436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c5805d38688021468c20af1f89e8ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Walk_Speed: 1.5
+  Chase_Speed: 2.5
+  Turn_Speed: 2.5
+  Walk_Point_Radius: 30
+  Chase_Distance: 25
+  Crystal_Chase_Distance: 0.25
+  Obstacle_Avoidance_Distance: 10
+  Monster_Animator: {fileID: 6854198516667659176}
 --- !u!1 &4536849177000734104
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4536849177000734104}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -388,7 +409,7 @@ Transform:
   - {fileID: 1667622491257723399}
   - {fileID: 7523720431340651072}
   m_Father: {fileID: 8788035315338931566}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &7833269183328912533
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,6 +21,9 @@ public class Monster_Movement_Script : MonoBehaviour
     public float Chase_Distance;
 
     [SerializeField]
+    public float Crystal_Chase_Distance;
+
+    [SerializeField]
     public float Obstacle_Avoidance_Distance;
 
     [HideInInspector]
@@ -62,13 +65,15 @@ public class Monster_Movement_Script : MonoBehaviour
             Is_Chasing_Player = true;
             Is_Chasing_Crystal = false;
             Is_Walking = true;
+            Monster_Animator.SetBool("Is_Walking", true);
         }
 
-        else if (Distance_To_Crystal <= Chase_Distance)
+        else if (Distance_To_Crystal <= Crystal_Chase_Distance)
         {
             Is_Chasing_Player = false;
             Is_Chasing_Crystal = true;
             Is_Walking = true;
+            Monster_Animator.SetBool("Is_Walking", true);
         }
 
         else if (Distance_To_Player > Chase_Distance * 1.5f)
@@ -77,14 +82,16 @@ public class Monster_Movement_Script : MonoBehaviour
             Is_Chasing_Crystal = false;
             Set_Random_Destination();
             Is_Walking = true;
+            Monster_Animator.SetBool("Is_Walking", true);
         }
 
-        else if (Distance_To_Crystal > Chase_Distance * 1.5f)
+        else if (Distance_To_Crystal > Crystal_Chase_Distance * 1.5f)
         {
             Is_Chasing_Player = false;
             Is_Chasing_Crystal = false;
             Set_Random_Destination();
             Is_Walking = true;
+            Monster_Animator.SetBool("Is_Walking", true);
         }
 
         if (Is_Chasing_Player)
@@ -120,7 +127,9 @@ public class Monster_Movement_Script : MonoBehaviour
 
     void Chase_Player()
     {
-        Quaternion Rotation = Quaternion.LookRotation(Player_Object.position - transform.position);
+        Vector3 Direction_To_Player = Player_Object.position - transform.position;
+        Direction_To_Player.y = 0;
+        Quaternion Rotation = Quaternion.LookRotation(Direction_To_Player);
         transform.rotation = Quaternion.Slerp(transform.rotation, Rotation, Turn_Speed * Time.deltaTime);
 
         transform.Translate(Vector3.forward * Chase_Speed * Time.deltaTime);
@@ -128,7 +137,9 @@ public class Monster_Movement_Script : MonoBehaviour
 
     void Run_To_Crystal()
     {
-        Quaternion Rotation = Quaternion.LookRotation(Mana_Crytal_Object.position - transform.position);
+        Vector3 Direction_To_Crystal = Mana_Crytal_Object.position - transform.position;
+        Direction_To_Crystal.y = 0;
+        Quaternion Rotation = Quaternion.LookRotation(Direction_To_Crystal);
         transform.rotation = Quaternion.Slerp(transform.rotation, Rotation, Turn_Speed * Time.deltaTime);
 
         transform.Translate(Vector3.forward * Chase_Speed * Time.deltaTime);
