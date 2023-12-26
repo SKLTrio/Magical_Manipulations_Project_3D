@@ -40,7 +40,7 @@ public class Monster_Wave_Script : MonoBehaviour
     {
         Wave_Count--;
 
-        Max_Monster_Count += 15;
+        Max_Monster_Count += 2;
 
         Monster_Count = 0;
 

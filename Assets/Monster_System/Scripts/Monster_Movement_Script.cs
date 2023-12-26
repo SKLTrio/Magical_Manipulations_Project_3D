@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Monster_Movement_Script : MonoBehaviour
 {
@@ -15,13 +14,13 @@ public class Monster_Movement_Script : MonoBehaviour
     public float Turn_Speed;
 
     [SerializeField]
-    public float Walk_Point_Radius;
-
-    [SerializeField]
     public float Chase_Distance;
 
     [SerializeField]
     public float Crystal_Chase_Distance;
+
+    [SerializeField]
+    public float Stopping_Radius;
 
     [SerializeField]
     public float Obstacle_Avoidance_Distance;
@@ -33,124 +32,89 @@ public class Monster_Movement_Script : MonoBehaviour
     private Transform Mana_Crytal_Object;
 
     [HideInInspector]
-    private Vector3 Walk_Destination;
+    private Transform Monster_Target;
 
     [HideInInspector]
     private bool Is_Walking;
 
-    [HideInInspector]
-    private bool Is_Chasing_Player;
-
-    [HideInInspector]
-    private bool Is_Chasing_Crystal;
-
     [SerializeField]
     public Animator Monster_Animator;
+
+    private float Monster_Y_Position;
 
     public void Start()
     {
         Player_Object = GameObject.FindGameObjectWithTag("Player").transform;
         Mana_Crytal_Object = GameObject.FindGameObjectWithTag("Mana_Crystal").transform;
 
-        Set_Random_Destination();
+        if (Random.Range(0f, 1f) > 0.35f)
+        {
+            Monster_Target = Player_Object;
+        }
+        else
+        {
+            Monster_Target = Mana_Crytal_Object;
+        }
+
+        Set_Monster_Destination(Monster_Target.position);
+
+        Monster_Y_Position = transform.position.y;
     }
 
     public void Update()
     {
-        float Distance_To_Player = Vector3.Distance(transform.position, Player_Object.position);
-        float Distance_To_Crystal = Vector3.Distance(transform.position, Mana_Crytal_Object.position);
+        float Distance_To_Target = Vector3.Distance(transform.position, Monster_Target.position);
 
-        if (Distance_To_Player <= Chase_Distance)
+        if (Distance_To_Target >= Chase_Distance)
         {
-            Is_Chasing_Player = true;
-            Is_Chasing_Crystal = false;
-            Is_Walking = true;
-            Monster_Animator.SetBool("Is_Walking", true);
-        }
+            if (!Is_Walking)
+            {
+                Is_Walking = true;
+                Monster_Animator.SetBool("Is_Walking", true);
+            }
 
-        else if (Distance_To_Crystal <= Crystal_Chase_Distance)
-        {
-            Is_Chasing_Player = false;
-            Is_Chasing_Crystal = true;
-            Is_Walking = true;
-            Monster_Animator.SetBool("Is_Walking", true);
-        }
-
-        else if (Distance_To_Player > Chase_Distance * 1.5f)
-        {
-            Is_Chasing_Player = false;
-            Is_Chasing_Crystal = false;
-            Set_Random_Destination();
-            Is_Walking = true;
-            Monster_Animator.SetBool("Is_Walking", true);
-        }
-
-        else if (Distance_To_Crystal > Crystal_Chase_Distance * 1.5f)
-        {
-            Is_Chasing_Player = false;
-            Is_Chasing_Crystal = false;
-            Set_Random_Destination();
-            Is_Walking = true;
-            Monster_Animator.SetBool("Is_Walking", true);
-        }
-
-        if (Is_Chasing_Player)
-        {
-            Chase_Player();
-        }
-
-        else if (Is_Chasing_Crystal)
-        {
-            Run_To_Crystal();
+            Walk_To_Target();
         }
 
         else
         {
-            Patrol_Around();
+            if (Is_Walking)
+            {
+                Is_Walking = false;
+                Monster_Animator.SetBool("Is_Walking", false);
+            }
         }
     }
 
-    void Patrol_Around()
+    public void Walk_To_Target()
     {
-        Quaternion Monster_Rotation = Quaternion.LookRotation(Walk_Destination - transform.position);
+        Quaternion Monster_Rotation = Quaternion.LookRotation(Monster_Target.position - transform.position);
+
+        Monster_Rotation.eulerAngles = new Vector3(0, Monster_Rotation.eulerAngles.y, 0);
         transform.rotation = Quaternion.Slerp(transform.rotation, Monster_Rotation, Turn_Speed * Time.deltaTime);
 
-        transform.Translate(Vector3.forward * Walk_Speed * Time.deltaTime);
+        Vector3 Walking_Direction = new Vector3(transform.forward.x, 0, transform.forward.z);
 
-        float Distance_To_Destination = Vector3.Distance(transform.position, Walk_Destination);
+        Vector3 Target_Position = transform.position + Walking_Direction * Walk_Speed * Time.deltaTime;
+        Target_Position.y = Monster_Y_Position;
 
-        if (Distance_To_Destination < 1.0f || Check_For_Obstacle())
+        float Distance_To_Destination = Vector3.Distance(Target_Position, Monster_Target.position);
+
+        if (Distance_To_Destination < Stopping_Radius)
         {
-            Set_Random_Destination();
+            Is_Walking = false;
+            Monster_Animator.SetBool("Is_Walking", false);
+        }
+
+        else
+        {
+            transform.position = Target_Position;
         }
     }
 
-    void Chase_Player()
+    public void Set_Monster_Destination(Vector3 Target_Destination)
     {
-        Vector3 Direction_To_Player = Player_Object.position - transform.position;
-        Direction_To_Player.y = 0;
-        Quaternion Rotation = Quaternion.LookRotation(Direction_To_Player);
-        transform.rotation = Quaternion.Slerp(transform.rotation, Rotation, Turn_Speed * Time.deltaTime);
-
-        transform.Translate(Vector3.forward * Chase_Speed * Time.deltaTime);
-    }
-
-    void Run_To_Crystal()
-    {
-        Vector3 Direction_To_Crystal = Mana_Crytal_Object.position - transform.position;
-        Direction_To_Crystal.y = 0;
-        Quaternion Rotation = Quaternion.LookRotation(Direction_To_Crystal);
-        transform.rotation = Quaternion.Slerp(transform.rotation, Rotation, Turn_Speed * Time.deltaTime);
-
-        transform.Translate(Vector3.forward * Chase_Speed * Time.deltaTime);
-    }
-
-    void Set_Random_Destination()
-    {
-        float Random_X_Position = Random.Range(-Walk_Point_Radius, Walk_Point_Radius);
-        float Random_Z_Position = Random.Range(-Walk_Point_Radius, Walk_Point_Radius);
-
-        Walk_Destination = new Vector3(transform.position.x + Random_X_Position, transform.position.y, transform.position.z + Random_Z_Position);
+        Monster_Target.position = Target_Destination;
     }
 
     public bool Check_For_Obstacle()

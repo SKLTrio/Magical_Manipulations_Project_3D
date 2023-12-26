@@ -1438,7 +1438,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &1209564227352445738
 BoxCollider:
@@ -1495,12 +1495,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5805d38688021468c20af1f89e8ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk_Speed: 1.5
-  Chase_Speed: 2.5
-  Turn_Speed: 1
-  Walk_Point_Radius: 30
+  Walk_Speed: 3.5
+  Chase_Speed: 4
+  Turn_Speed: 2.5
   Chase_Distance: 10
-  Crystal_Chase_Distance: 0.25
+  Crystal_Chase_Distance: 3
+  Stopping_Radius: 10
   Obstacle_Avoidance_Distance: 10
   Monster_Animator: {fileID: 7770597716784141524}
 --- !u!1 &8860650402984268671

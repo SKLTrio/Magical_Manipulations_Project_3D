@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -241,7 +241,7 @@ MonoBehaviour:
   Spawn_X_Position: 0
   Spawn_Z_Position: 0
   Monster_Type: {fileID: 0}
-  Max_Monster_Count: 5
+  Max_Monster_Count: 1
   Monster_Count: 0
   Wave_Count: 3
 --- !u!1001 &26306985
@@ -255,6 +255,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -530,6 +534,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1035,6 +1043,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_02_#2
       objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1382,6 +1395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_02_#5
       objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1469,6 +1487,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1671,6 +1693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#21
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.9
@@ -1733,6 +1759,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1863,6 +1893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_05_#1
       objectReference: {fileID: 0}
+    - target: {fileID: 7809331290410404023, guid: 0dd050efb10a21c4f8d1c3ab7e33f70b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1948,6 +1983,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2285,6 +2324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#9
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.1
@@ -2502,6 +2545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_05_#2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809331290410404023, guid: 0dd050efb10a21c4f8d1c3ab7e33f70b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2763,6 +2811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#113
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -66.8
@@ -2825,6 +2877,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2951,6 +3007,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3134,6 +3194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#104
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.2
@@ -3196,6 +3260,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3260,6 +3328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#22
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.9
@@ -3323,6 +3395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#124
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -67.899994
@@ -3385,6 +3461,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3567,6 +3647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#24
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.909996
@@ -3629,6 +3713,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3693,6 +3781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#39
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -34.5
@@ -3755,6 +3847,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4090,6 +4186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#6
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.6
@@ -4321,6 +4421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#18
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.8600006
@@ -4473,6 +4577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.8
@@ -4619,6 +4727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#61
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.3
@@ -4681,6 +4793,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4808,6 +4924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#110
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -54
@@ -4933,6 +5053,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5402,6 +5526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_02_#1
       objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5489,6 +5618,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5814,6 +5947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#120
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.7
@@ -5877,6 +6014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#90
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.099998
@@ -5939,6 +6080,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6036,6 +6181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#122
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -68.8
@@ -6099,6 +6248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fir_Tree_#1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.2
@@ -6161,6 +6314,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6643,6 +6800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_04_#3
       objectReference: {fileID: 0}
+    - target: {fileID: 2684695994064820914, guid: 86509780b07285a44a69b1eb089a3ed1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6235409801154746877, guid: 86509780b07285a44a69b1eb089a3ed1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6850,6 +7012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#91
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.1
@@ -7022,6 +7188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_02_#4
       objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7110,6 +7281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#85
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.960003
@@ -7173,6 +7348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#3
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.4
@@ -7235,6 +7414,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7361,6 +7544,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7751,6 +7938,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_01_#7
       objectReference: {fileID: 0}
+    - target: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7773,6 +7965,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8123,6 +8319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#76
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.5
@@ -8186,6 +8386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#4
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.3
@@ -8248,6 +8452,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8417,6 +8625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#43
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.3
@@ -8479,6 +8691,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8648,6 +8864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#31
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.5
@@ -8710,6 +8930,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9091,6 +9315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#60
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.2
@@ -9154,6 +9382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#2
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.95
@@ -9216,6 +9448,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#101
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9369,6 +9605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_02_#8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
@@ -9599,6 +9840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fir_Tree_#6
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9674,6 +9919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#121
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -54.6
@@ -9736,6 +9985,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#67
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9971,6 +10224,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_01_#4
       objectReference: {fileID: 0}
+    - target: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9993,6 +10251,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10177,6 +10439,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_04_#2
       objectReference: {fileID: 0}
+    - target: {fileID: 2684695994064820914, guid: 86509780b07285a44a69b1eb089a3ed1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6235409801154746877, guid: 86509780b07285a44a69b1eb089a3ed1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -10264,6 +10531,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10518,6 +10789,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_05_#4
       objectReference: {fileID: 0}
+    - target: {fileID: 7809331290410404023, guid: 0dd050efb10a21c4f8d1c3ab7e33f70b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10771,6 +11047,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11153,6 +11433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#83
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.5
@@ -11324,6 +11608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#12
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.7
@@ -11386,6 +11674,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11450,6 +11742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#115
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -71.8
@@ -11513,6 +11809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#82
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.100002
@@ -11575,6 +11875,10 @@ PrefabInstance:
     - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_Name
       value: Fir_Tree_#5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -11650,6 +11954,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11982,6 +12290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#20
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24
@@ -12171,6 +12483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#65
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.53
@@ -12296,6 +12612,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12443,6 +12763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#33
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
@@ -12505,6 +12829,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12569,6 +12897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#71
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.9
@@ -12631,6 +12963,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12758,6 +13094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#119
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -53.8
@@ -12820,6 +13160,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13032,6 +13376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#99
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.1
@@ -13094,6 +13442,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#109
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13241,6 +13593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#88
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.000002
@@ -13303,6 +13659,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13432,6 +13792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_05_#3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809331290410404023, guid: 0dd050efb10a21c4f8d1c3ab7e33f70b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13563,6 +13928,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14097,6 +14466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#49
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.7
@@ -14223,6 +14596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fir_Tree_#9
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -14297,6 +14674,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14525,6 +14906,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_01_#1
       objectReference: {fileID: 0}
+    - target: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14666,6 +15052,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14981,6 +15371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#78
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.5
@@ -15043,6 +15437,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15107,6 +15505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_04_#4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684695994064820914, guid: 86509780b07285a44a69b1eb089a3ed1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6235409801154746877, guid: 86509780b07285a44a69b1eb089a3ed1,
         type: 3}
@@ -15196,6 +15599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#77
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 59.900005
@@ -15259,6 +15666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_02_#3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
@@ -15348,6 +15760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#116
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70
@@ -15411,6 +15827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_02_#6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
@@ -15566,6 +15987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_01_#3
       objectReference: {fileID: 0}
+    - target: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15694,6 +16120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#30
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.5
@@ -15756,6 +16186,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15970,6 +16404,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16256,6 +16694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_04_#1
       objectReference: {fileID: 0}
+    - target: {fileID: 2684695994064820914, guid: 86509780b07285a44a69b1eb089a3ed1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6235409801154746877, guid: 86509780b07285a44a69b1eb089a3ed1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -16343,6 +16786,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17075,6 +17522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#35
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25
@@ -17221,6 +17672,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17545,6 +18000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#28
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.5
@@ -17674,6 +18133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_01_#5
       objectReference: {fileID: 0}
+    - target: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17696,6 +18160,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17800,6 +18268,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18179,6 +18651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#34
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.3
@@ -18241,6 +18717,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18410,6 +18890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#37
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40
@@ -18473,6 +18957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_02_#7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173341499977504312, guid: 9cf4cca6be6d72b4191cec509848f6ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6298293515804775796, guid: 9cf4cca6be6d72b4191cec509848f6ac,
         type: 3}
@@ -18670,6 +19159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#11
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.1
@@ -18786,6 +19279,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#102
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19158,6 +19655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#75
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39
@@ -19520,6 +20021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#17
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.57
@@ -19582,6 +20087,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#117
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19833,6 +20342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#52
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24
@@ -19895,6 +20408,10 @@ PrefabInstance:
     - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_Name
       value: Fir_Tree_#7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -20075,6 +20592,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20459,6 +20980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.63
@@ -20627,6 +21152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#59
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.6
@@ -20689,6 +21218,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20785,6 +21318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#56
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.1
@@ -20847,6 +21384,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#111
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20911,6 +21452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#95
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.4
@@ -20973,6 +21518,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21208,6 +21757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#118
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -58.2
@@ -21270,6 +21823,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21334,6 +21891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#16
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.43
@@ -21396,6 +21957,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21522,6 +22087,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#123
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21923,6 +22492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fir_Tree_#4
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -21998,6 +22571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#112
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65.9
@@ -22061,6 +22638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#98
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.600002
@@ -22123,6 +22704,10 @@ PrefabInstance:
     - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_Name
       value: Fir_Tree_#3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -22198,6 +22783,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22858,6 +23447,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_01_#6
       objectReference: {fileID: 0}
+    - target: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22965,6 +23559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#81
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.1
@@ -23027,6 +23625,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23365,6 +23967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#55
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.5
@@ -23427,6 +24033,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23491,6 +24101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#64
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.6
@@ -23554,6 +24168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#19
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.29
@@ -23616,6 +24234,10 @@ PrefabInstance:
     - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_Name
       value: Fir_Tree_#2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -23757,6 +24379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_01_#2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133,
+        type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24007,6 +24634,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#70
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24523,6 +25154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#66
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.85
@@ -24585,6 +25220,10 @@ PrefabInstance:
     - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_Name
       value: Fir_Tree_#10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -24660,6 +25299,10 @@ PrefabInstance:
     - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_Name
       value: Fir_Tree_#8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010042709864, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000012944994536, guid: 681caea7d7db32e468aa5bc7e60da2f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -25391,6 +26034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree_#40
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.2
@@ -25720,6 +26367,10 @@ PrefabInstance:
     - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_Name
       value: Oak_Tree_#48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011745704624, guid: 38693110c240171409a05b6a2347b900, type: 3}
+      propertyPath: m_TagString
+      value: Monster_Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4000010515629678, guid: 38693110c240171409a05b6a2347b900, type: 3}
       propertyPath: m_LocalPosition.x

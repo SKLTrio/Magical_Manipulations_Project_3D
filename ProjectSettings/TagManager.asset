@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mana_Crystal
+  - Monster_Obstacle
   layers:
   - Default
   - TransparentFX
