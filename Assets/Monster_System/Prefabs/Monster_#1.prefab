@@ -1390,6 +1390,7 @@ GameObject:
   - component: {fileID: 1209564227352445738}
   - component: {fileID: 7770597716784141524}
   - component: {fileID: 1091378537800332119}
+  - component: {fileID: -148195647654149056}
   m_Layer: 0
   m_Name: Monster_#1
   m_TagString: Untagged
@@ -1495,14 +1496,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5805d38688021468c20af1f89e8ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk_Speed: 3.5
-  Chase_Speed: 4
+  Walk_Speed: 8
   Turn_Speed: 2.5
-  Chase_Distance: 10
-  Crystal_Chase_Distance: 3
-  Stopping_Radius: 10
+  Stopping_Radius: 6
   Obstacle_Avoidance_Distance: 10
+  Player_Object: {fileID: 0}
+  Mana_Crytal_Object: {fileID: 0}
+  Monster_Target: {fileID: 0}
   Monster_Animator: {fileID: 7770597716784141524}
+--- !u!114 &-148195647654149056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756020732046958594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770b0ccfa4c469d40a606b6fe9dd0c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Monster_Attack_Strength: 5
+  Monster_Attack_Distance: 8
+  Attack_Cooldown_Speed: 3
+  Monster_Animator: {fileID: 7770597716784141524}
+  Can_Attack: 0
+  Player_Health: {fileID: 0}
+  Mana_Crystal_Health: {fileID: 0}
+  Monster_Move_Script: {fileID: 1091378537800332119}
+  Attack_Target: {fileID: 0}
+  Health_Target: 
 --- !u!1 &8860650402984268671
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,16 +8,7 @@ public class Monster_Movement_Script : MonoBehaviour
     public float Walk_Speed;
 
     [SerializeField]
-    public float Chase_Speed;
-
-    [SerializeField]
     public float Turn_Speed;
-
-    [SerializeField]
-    public float Chase_Distance;
-
-    [SerializeField]
-    public float Crystal_Chase_Distance;
 
     [SerializeField]
     public float Stopping_Radius;
@@ -26,13 +17,13 @@ public class Monster_Movement_Script : MonoBehaviour
     public float Obstacle_Avoidance_Distance;
 
     [HideInInspector]
-    private Transform Player_Object;
+    public Transform Player_Object;
 
     [HideInInspector]
-    private Transform Mana_Crytal_Object;
+    public Transform Mana_Crytal_Object;
 
     [HideInInspector]
-    private Transform Monster_Target;
+    public Transform Monster_Target;
 
     [HideInInspector]
     private bool Is_Walking;
@@ -65,7 +56,7 @@ public class Monster_Movement_Script : MonoBehaviour
     {
         float Distance_To_Target = Vector3.Distance(transform.position, Monster_Target.position);
 
-        if (Distance_To_Target >= Chase_Distance)
+        if (Distance_To_Target >= Stopping_Radius)
         {
             if (!Is_Walking)
             {

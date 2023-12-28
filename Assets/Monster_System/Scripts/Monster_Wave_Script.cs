@@ -26,6 +26,9 @@ public class Monster_Wave_Script : MonoBehaviour
     public int Max_Monster_Count;
 
     [SerializeField]
+    public int Monster_Wave_Increase_Count;
+
+    [SerializeField]
     public int Monster_Count;
 
     [SerializeField]
@@ -40,11 +43,11 @@ public class Monster_Wave_Script : MonoBehaviour
     {
         Wave_Count--;
 
-        Max_Monster_Count += 2;
+        Max_Monster_Count += Monster_Wave_Increase_Count;
 
         Monster_Count = 0;
 
-        InvokeRepeating("Spawn_Monster", 0f, Random.Range(5, 16));
+        InvokeRepeating("Spawn_Monster", 0f, Random.Range(5, 11));
     }
 
     public void Spawn_Monster()
