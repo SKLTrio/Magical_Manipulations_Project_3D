@@ -91,16 +91,19 @@ public class Monster_Movement_Script : MonoBehaviour
 
         float Distance_To_Destination = Vector3.Distance(Target_Position, Monster_Target.position);
 
-        if (Distance_To_Destination < Stopping_Radius)
+        if (!Check_For_Obstacle())
         {
-            Is_Walking = false;
-            Monster_Animator.SetBool("Is_Walking", false);
-        }
+            if (Distance_To_Destination < Stopping_Radius)
+            {
+                Is_Walking = false;
+                Monster_Animator.SetBool("Is_Walking", false);
+            }
 
-        else
-        {
-            transform.position = Target_Position;
-        }
+            else
+            {
+                transform.position = Target_Position;
+            }
+        }   
     }
 
     public void Set_Monster_Destination(Vector3 Target_Destination)
@@ -116,6 +119,7 @@ public class Monster_Movement_Script : MonoBehaviour
         {
             if (Hit.collider.CompareTag("Monster_Obstacle"))
             {
+                Debug.Log("Obstacle detected: " + Hit.collider.name);
                 return true;
             }
         }

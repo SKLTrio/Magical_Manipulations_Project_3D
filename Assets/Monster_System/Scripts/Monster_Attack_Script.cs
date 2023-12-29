@@ -58,7 +58,7 @@ public class Monster_Attack_Script : MonoBehaviour
     {
         float Distance_To_Target = Vector3.Distance(transform.position, Attack_Target.transform.position);
 
-        if (Distance_To_Target <= Monster_Attack_Distance && Can_Attack)
+        if (Distance_To_Target <= Monster_Attack_Distance && Can_Attack && !Monster_Move_Script.Check_For_Obstacle())
         {
             Attack();
             StartCoroutine(Cooldown_Period());
