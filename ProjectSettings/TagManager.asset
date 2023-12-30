@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Mana_Crystal
   - Monster_Obstacle
+  - Monster
+  - Wave_Spawner
   layers:
   - Default
   - TransparentFX

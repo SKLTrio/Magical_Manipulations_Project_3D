@@ -70,7 +70,7 @@ public class Player_Health_Script : MonoBehaviour
         return Current_Health / Max_Health;
     }
 
-    IEnumerator Set_Damage_Panel()
+    public IEnumerator Set_Damage_Panel()
     {
         if (UI_Damage_Image != null)
         {
