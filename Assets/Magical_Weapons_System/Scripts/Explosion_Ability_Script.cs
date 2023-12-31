@@ -4,6 +4,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class Explosion_Ability_Script : MonoBehaviour
 {
@@ -16,8 +17,29 @@ public class Explosion_Ability_Script : MonoBehaviour
     [SerializeField]
     public BoxCollider Particle_Collider;
 
+    [SerializeField]
+    public GameObject Player_Camera_Container;
+
+    [SerializeField]
+    public float Screen_Shake_Duration;
+
+    [SerializeField]
+    public float Screen_Shake_Amount;
+
     [HideInInspector]
     public float Last_Explosion;
+
+    [HideInInspector]
+    public Vector3 Original_Screen_Position;
+
+    [HideInInspector]
+    public bool Can_Shake;
+
+    public void Start()
+    {
+        Original_Screen_Position = Player_Camera_Container.transform.position;
+    }
+
 
     public void Update()
     {
@@ -41,7 +63,7 @@ public class Explosion_Ability_Script : MonoBehaviour
 
         Particle_Collider.enabled = true;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.25f);
         
         Particle_Collider.enabled = false;
     }

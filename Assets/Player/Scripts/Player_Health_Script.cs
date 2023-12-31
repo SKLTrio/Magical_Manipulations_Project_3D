@@ -90,7 +90,7 @@ public class Player_Health_Script : MonoBehaviour
 
                 yield return new WaitForSeconds(.75f);
 
-                for (Image_Alpha = 0.1f; Image_Alpha >= 0f; Image_Alpha -= 0.01f)
+                for (Image_Alpha = 0.5f; Image_Alpha >= 0f; Image_Alpha -= 0.01f)
                 {
                     Color Current_Image_Colour = UI_Damage_Image.color;
                     Current_Image_Colour.a = Image_Alpha;

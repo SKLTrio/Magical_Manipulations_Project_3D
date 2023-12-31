@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: -8022158153472318123}
   - component: {fileID: 7218963280016985651}
   m_Layer: 0
-  m_Name: Monster_#3
+  m_Name: Monster_#3_Green
   m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,7 +509,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7af502d92ae75c140be48ee8ba36be30, type: 2}
+  - {fileID: 2100000, guid: 1604c633ad381e7428fbf5ee08b825a8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
