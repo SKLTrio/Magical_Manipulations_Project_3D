@@ -47,7 +47,7 @@ public class Monster_Wave_Script : MonoBehaviour
 
         Monster_Count = 0;
 
-        InvokeRepeating("Spawn_Monster", 0f, Random.Range(5, 11));
+        InvokeRepeating("Spawn_Monster", 0f, Random.Range(3, 6));
     }
 
     public void Spawn_Monster()
@@ -58,19 +58,19 @@ public class Monster_Wave_Script : MonoBehaviour
 
             Debug.Log("This new position is: " + Spawn_X_Position + ", 0, " + Spawn_Z_Position);
 
-            if (Monster_Type == Monster_Type_Prefabs[0])
+            if (Monster_Type == Monster_Type_Prefabs[0] || Monster_Type == Monster_Type_Prefabs[3] || Monster_Type == Monster_Type_Prefabs[6])
             {
                 GameObject New_Monster = Instantiate(Monster_Type, new Vector3(Spawn_X_Position, 1.9f, Spawn_Z_Position), Quaternion.identity);
                 New_Monster.transform.parent = Parent_Object;
             }
 
-            else if (Monster_Type == Monster_Type_Prefabs[1])
+            else if (Monster_Type == Monster_Type_Prefabs[1] || Monster_Type == Monster_Type_Prefabs[4] || Monster_Type == Monster_Type_Prefabs[7])
             {
                 GameObject New_Monster = Instantiate(Monster_Type, new Vector3(Spawn_X_Position, 4.51f, Spawn_Z_Position), Quaternion.identity);
                 New_Monster.transform.parent = Parent_Object;
             }
 
-            else if (Monster_Type == Monster_Type_Prefabs[2])
+            else if (Monster_Type == Monster_Type_Prefabs[2] || Monster_Type == Monster_Type_Prefabs[5] || Monster_Type == Monster_Type_Prefabs[8])
             {
                 GameObject New_Monster = Instantiate(Monster_Type, new Vector3(Spawn_X_Position, 3f, Spawn_Z_Position), Quaternion.identity);
                 New_Monster.transform.parent = Parent_Object;

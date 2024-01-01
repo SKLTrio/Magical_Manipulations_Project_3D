@@ -9,16 +9,29 @@ public class Blue_Wand_Script : MonoBehaviour
     public GameObject Mana_Orb_Prefab;
 
     [SerializeField]
+    public float Wand_Damage;
+
+    [SerializeField]
     public float Mana_Orb_Speed;
+
+    [SerializeField]
+    public float Wand_Shoot_Delay;
+
+    [SerializeField]
+    public Player_Mana_Script Mana_Amount_Script;
 
     [HideInInspector]
     public GameObject Current_Orb;
 
+    [HideInInspector]
+    public float Next_Time_To_Shoot = 0f;
+
     public void Update()
     {
-        if (Mouse.current.leftButton.isPressed)
+        if (Mouse.current.leftButton.isPressed && Time.time > Next_Time_To_Shoot)
         {
             Shoot_Wand();
+            Next_Time_To_Shoot += Wand_Shoot_Delay;
         }
     }
 
@@ -45,20 +58,10 @@ public class Blue_Wand_Script : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider Collider)
-    {
-        Debug.Log("Collider Detected");
-        Destroy_Orb();
-
-        if (Collider.gameObject.CompareTag("Monster"))
-        {
-            Debug.Log("Monster Hit");
-        }
-    }
-
     public void Destroy_Orb()
     {
         Destroy(Current_Orb);
         Current_Orb = null;
     }
+
 }

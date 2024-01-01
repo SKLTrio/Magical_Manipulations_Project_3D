@@ -11239,8 +11239,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mana_Orb_Prefab: {fileID: 484933942454887242, guid: efce5cbccb882704189b057456831df6,
     type: 3}
-  Mana_Orb_Speed: 5
+  Wand_Damage: 75
+  Mana_Orb_Speed: 25
+  Wand_Shoot_Delay: 2.5
+  Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
+  Next_Time_To_Shoot: 0
 --- !u!1 &681404307
 GameObject:
   m_ObjectHideFlags: 0
@@ -13475,8 +13479,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mana_Orb_Prefab: {fileID: 484933942454887242, guid: e57778510ca6ecc439981deeea96385a,
     type: 3}
-  Mana_Orb_Speed: 5
+  Wand_Damage: 75
+  Mana_Orb_Speed: 25
+  Wand_Shoot_Delay: 2.5
+  Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
+  Next_Time_To_Shoot: 0
 --- !u!1001 &814178285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21630,6 +21638,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1065866316}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1071432225
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2423860622800418893, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_Name
+      value: Placed_Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.12368826
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99232113
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -165.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587211288500092647, guid: 46071484a5a8b974a8b158d3f3792210,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 46071484a5a8b974a8b158d3f3792210, type: 3}
 --- !u!1001 &1072996987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25799,8 +25875,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mana_Orb_Prefab: {fileID: 484933942454887242, guid: 80e289bea98469e41ac2e716022557b6,
     type: 3}
-  Mana_Orb_Speed: 5
+  Wand_Damage: 75
+  Mana_Orb_Speed: 25
+  Wand_Shoot_Delay: 2.5
+  Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
+  Next_Time_To_Shoot: 0
 --- !u!1001 &1416386244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36199,4 +36279,5 @@ SceneRoots:
   - {fileID: 305964456}
   - {fileID: 2107349829}
   - {fileID: 86941588}
+  - {fileID: 1071432225}
   - {fileID: 2050954277}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1645782280833452257}
   - component: {fileID: 1331324355265738372}
   - component: {fileID: -5663067348244530533}
+  - component: {fileID: 5193671244900418109}
   m_Layer: 0
   m_Name: Purple_Mana_Orb
   m_TagString: Untagged
@@ -82,6 +83,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &5193671244900418109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484933942454887242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae4ad197e7e96e4fbbeda0b555c2b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Blue_Wand_Scr: {fileID: 0}
+  Wand_Prefab: Purple_Wand
 --- !u!1 &1359654661723741199
 GameObject:
   m_ObjectHideFlags: 0
