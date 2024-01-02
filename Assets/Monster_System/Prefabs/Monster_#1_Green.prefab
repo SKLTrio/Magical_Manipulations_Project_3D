@@ -2989,10 +2989,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5805d38688021468c20af1f89e8ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk_Speed: 8
+  Walk_Speed: 9
   Turn_Speed: 2.5
   Stopping_Radius: 6
-  Obstacle_Avoidance_Distance: 2
+  Obstacle_Avoidance_Distance: 6
   Player_Object: {fileID: 0}
   Mana_Crytal_Object: {fileID: 0}
   Monster_Target: {fileID: 0}
@@ -3035,6 +3035,9 @@ MonoBehaviour:
   Monster_Wave: {fileID: 0}
   Monster_Original_Model: {fileID: 8860650402984268671}
   Monster_Red_Model: {fileID: 5454853560838770752}
+  Monster_Damage_Indicator: {fileID: 989656230517395907}
+  Monster_Damage_Indicator_Text: {fileID: 7241650865548204797}
+  Damage_Done: 0
 --- !u!1 &8833859215884129784
 GameObject:
   m_ObjectHideFlags: 0

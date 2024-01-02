@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5805d38688021468c20af1f89e8ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk_Speed: 6
+  Walk_Speed: 8
   Turn_Speed: 2.5
   Stopping_Radius: 6
   Obstacle_Avoidance_Distance: 6
@@ -456,6 +456,9 @@ MonoBehaviour:
   Monster_Wave: {fileID: 0}
   Monster_Original_Model: {fileID: 7547458318778154230}
   Monster_Red_Model: {fileID: 4576272833333092601}
+  Monster_Damage_Indicator: {fileID: 1624060241273016121}
+  Monster_Damage_Indicator_Text: {fileID: 6987107849891802797}
+  Damage_Done: 0
 --- !u!1 &1525025459156489057
 GameObject:
   m_ObjectHideFlags: 0

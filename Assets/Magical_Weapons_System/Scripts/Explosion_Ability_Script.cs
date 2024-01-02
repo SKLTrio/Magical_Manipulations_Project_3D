@@ -12,6 +12,9 @@ public class Explosion_Ability_Script : MonoBehaviour
     public ParticleSystem Explosion_PS;
 
     [SerializeField]
+    public float Mana_Cost;
+
+    [SerializeField]
     public float Explosion_Cooldown_Period;
 
     [SerializeField]
@@ -25,6 +28,9 @@ public class Explosion_Ability_Script : MonoBehaviour
 
     [SerializeField]
     public float Screen_Shake_Amount;
+
+    [SerializeField]
+    public Player_Mana_Script Mana_Amount_Script;
 
     [HideInInspector]
     public float Last_Explosion;
@@ -45,8 +51,11 @@ public class Explosion_Ability_Script : MonoBehaviour
     {
         if (Mouse.current.rightButton.isPressed && Time.time >= Last_Explosion + Explosion_Cooldown_Period)
         {
-            Start_Explosion();
-            Last_Explosion = Time.time;
+            if (Mana_Amount_Script.Current_Mana_Amount >= Mana_Cost)
+            {
+                Start_Explosion();
+                Last_Explosion = Time.time;
+            }  
         }
     }
 

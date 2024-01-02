@@ -47,7 +47,8 @@ public class Monster_Wave_Script : MonoBehaviour
 
         Monster_Count = 0;
 
-        InvokeRepeating("Spawn_Monster", 0f, Random.Range(3, 6));
+        InvokeRepeating("Spawn_Monster", 0f, Random.Range(1, 4));
+        InvokeRepeating("Spawn_Monster", 0f, Random.Range(1, 4));
     }
 
     public void Spawn_Monster()

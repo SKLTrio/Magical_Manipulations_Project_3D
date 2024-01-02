@@ -119,7 +119,7 @@ public class Monster_Movement_Script : MonoBehaviour
         {
             if (Hit.collider.CompareTag("Monster_Obstacle"))
             {
-                Debug.Log("Obstacle detected: " + Hit.collider.name);
+                //Debug.Log("Obstacle detected: " + Hit.collider.name);
                 return true;
             }
         }
