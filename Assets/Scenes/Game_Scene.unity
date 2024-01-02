@@ -11256,9 +11256,9 @@ MonoBehaviour:
   Mana_Orb_Prefab: {fileID: 484933942454887242, guid: efce5cbccb882704189b057456831df6,
     type: 3}
   Wand_Damage: 25
-  Mana_Cost: 5
+  Mana_Cost: 10
   Mana_Orb_Speed: 25
-  Wand_Shoot_Delay: 1
+  Wand_Shoot_Delay: 0.5
   Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
   Next_Time_To_Shoot: 0
@@ -13493,15 +13493,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 804385843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e71334a40690085458caa4bf002996f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 02fccea1a3f492343ada6132b7e7c5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mana_Orb_Prefab: {fileID: 484933942454887242, guid: e57778510ca6ecc439981deeea96385a,
     type: 3}
   Wand_Damage: 25
-  Mana_Cost: 5
+  Mana_Cost: 10
   Mana_Orb_Speed: 25
-  Wand_Shoot_Delay: 1
+  Wand_Shoot_Delay: 0.5
   Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
   Next_Time_To_Shoot: 0
@@ -25895,15 +25895,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1412567076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e71334a40690085458caa4bf002996f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ad244ad436ca1d4987103688281e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mana_Orb_Prefab: {fileID: 484933942454887242, guid: 80e289bea98469e41ac2e716022557b6,
     type: 3}
   Wand_Damage: 25
-  Mana_Cost: 5
+  Mana_Cost: 10
   Mana_Orb_Speed: 25
-  Wand_Shoot_Delay: 1
+  Wand_Shoot_Delay: 0.5
   Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
   Next_Time_To_Shoot: 0

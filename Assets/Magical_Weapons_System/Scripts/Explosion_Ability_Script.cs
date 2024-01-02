@@ -49,7 +49,7 @@ public class Explosion_Ability_Script : MonoBehaviour
 
     public void Update()
     {
-        if (Mouse.current.rightButton.isPressed && Time.time >= Last_Explosion + Explosion_Cooldown_Period)
+        if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= Last_Explosion + Explosion_Cooldown_Period)
         {
             if (Mana_Amount_Script.Current_Mana_Amount >= Mana_Cost)
             {

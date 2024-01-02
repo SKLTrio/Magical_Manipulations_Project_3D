@@ -5,7 +5,7 @@ using UnityEngine;
 public class Mana_Orb_Script : MonoBehaviour
 {
     [HideInInspector]
-    public Wand_Script Blue_Wand_Scr;
+    public Blue_Wand_Script Blue_Wand_Scr;
 
     [SerializeField]
     public string Wand_Prefab; 
@@ -13,7 +13,7 @@ public class Mana_Orb_Script : MonoBehaviour
     public void Start()
     {
         GameObject Wand_Obj = GameObject.Find(Wand_Prefab);
-        Blue_Wand_Scr = Wand_Obj.GetComponent<Wand_Script>();
+        Blue_Wand_Scr = Wand_Obj.GetComponent<Blue_Wand_Script>();
     }
 
     public void OnTriggerEnter(Collider Collider)

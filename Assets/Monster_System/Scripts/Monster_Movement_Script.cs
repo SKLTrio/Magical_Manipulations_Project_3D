@@ -31,6 +31,12 @@ public class Monster_Movement_Script : MonoBehaviour
     [SerializeField]
     public Animator Monster_Animator;
 
+    [SerializeField]
+    public AudioClip Monster_Growl_1_Clip;
+
+    [SerializeField]
+    public AudioClip Monster_Growl_2_Clip;
+
     private float Monster_Y_Position;
 
     public void Start()
@@ -73,6 +79,21 @@ public class Monster_Movement_Script : MonoBehaviour
             {
                 Is_Walking = false;
                 Monster_Animator.SetBool("Is_Walking", false);
+            }
+        }
+
+        if (Random.Range(1, 500) == Random.Range(1, 500))
+        {
+            int Random_Monster_Audio_Clip = Random.Range(0, 2);
+
+            if (Random_Monster_Audio_Clip == 0)
+            {
+                AudioSource.PlayClipAtPoint(Monster_Growl_1_Clip, transform.position);
+            }
+
+            else
+            {
+                AudioSource.PlayClipAtPoint(Monster_Growl_2_Clip, transform.position);
             }
         }
     }

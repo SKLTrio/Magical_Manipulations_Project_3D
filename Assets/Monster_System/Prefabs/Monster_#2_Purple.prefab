@@ -545,6 +545,10 @@ MonoBehaviour:
   Mana_Crytal_Object: {fileID: 0}
   Monster_Target: {fileID: 0}
   Monster_Animator: {fileID: 2721369900606967119}
+  Monster_Growl_1_Clip: {fileID: 8300000, guid: 8565e0d465bd4f94492085628f8efcd3,
+    type: 3}
+  Monster_Growl_2_Clip: {fileID: 8300000, guid: ee3bd65ba4f53c04c988d59d91321a3b,
+    type: 3}
 --- !u!114 &6211152151522157798
 MonoBehaviour:
   m_ObjectHideFlags: 0

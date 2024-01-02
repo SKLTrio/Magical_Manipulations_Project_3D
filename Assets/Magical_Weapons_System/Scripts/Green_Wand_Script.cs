@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Wand_Script : MonoBehaviour
+public class Green_Wand_Script : MonoBehaviour
 {
     [SerializeField]
     public GameObject Mana_Orb_Prefab;
@@ -31,7 +31,7 @@ public class Wand_Script : MonoBehaviour
 
     public void Update()
     {
-        if (Mouse.current.leftButton.isPressed && Time.time > Next_Time_To_Shoot)
+        if (Mouse.current.leftButton.wasPressedThisFrame && Time.time > Next_Time_To_Shoot)
         {
             if (Mana_Amount_Script.Current_Mana_Amount >= Mana_Cost)
             {

@@ -71,6 +71,8 @@ public class Player_Mana_Script : MonoBehaviour
 
     public void Take_Mana(float Mana_Amount)
     {
+        Debug.Log("Taking mana: " + Mana_Amount);
+
         Current_Mana_Amount -= Mana_Amount;
 
         Current_Mana_Amount = Mathf.Max(Current_Mana_Amount, Min_Mana_Amount);

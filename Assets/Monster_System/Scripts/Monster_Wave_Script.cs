@@ -36,10 +36,10 @@ public class Monster_Wave_Script : MonoBehaviour
 
     public void Start()
     {
-        Invoke("Next_Wave", 5f);
+        StartCoroutine("Wave_Start_Timer");     
     }
 
-    public void Next_Wave()
+    public void First_Wave()
     {
         Wave_Count--;
 
@@ -98,5 +98,12 @@ public class Monster_Wave_Script : MonoBehaviour
 
         Spawn_X_Position = Random_Spawning_Point.x;
         Spawn_Z_Position = Random_Spawning_Point.z;
+    }
+
+    public IEnumerator Wave_Start_Timer()
+    {
+        yield return new WaitForSeconds(15f);
+
+        Invoke("First_Wave", 0f);
     }
 }
