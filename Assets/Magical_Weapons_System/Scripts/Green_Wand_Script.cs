@@ -9,9 +9,6 @@ public class Green_Wand_Script : MonoBehaviour
     public GameObject Mana_Orb_Prefab;
 
     [SerializeField]
-    public float Wand_Damage;
-
-    [SerializeField]
     public float Mana_Cost;
 
     [SerializeField]

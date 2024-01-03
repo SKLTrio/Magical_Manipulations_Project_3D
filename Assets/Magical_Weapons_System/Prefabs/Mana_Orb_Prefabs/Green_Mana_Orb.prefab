@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1645782280833452257}
   - component: {fileID: 1331324355265738372}
   - component: {fileID: -5663067348244530533}
-  - component: {fileID: 6228561853662026739}
+  - component: {fileID: 2080090847063204053}
   m_Layer: 0
   m_Name: Green_Mana_Orb
   m_TagString: Untagged
@@ -83,7 +83,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &6228561853662026739
+--- !u!114 &2080090847063204053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,10 +92,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 484933942454887242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae4ad197e7e96e4fbbeda0b555c2b9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d65125c11696ed4f87bd1b8cc5d1ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blue_Wand_Scr: {fileID: 0}
+  Green_Wand_Scr: {fileID: 0}
+  Movement_Script: {fileID: 0}
   Wand_Prefab: Green_Wand
 --- !u!1 &3311664904392102448
 GameObject:

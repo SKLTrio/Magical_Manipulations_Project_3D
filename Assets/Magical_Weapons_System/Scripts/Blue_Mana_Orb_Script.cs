@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mana_Orb_Script : MonoBehaviour
+public class Blue_Mana_Orb_Script : MonoBehaviour
 {
     [HideInInspector]
     public Blue_Wand_Script Blue_Wand_Scr;

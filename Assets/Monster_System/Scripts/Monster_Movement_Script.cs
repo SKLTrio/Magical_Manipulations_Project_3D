@@ -28,8 +28,14 @@ public class Monster_Movement_Script : MonoBehaviour
     [HideInInspector]
     private bool Is_Walking;
 
+    [HideInInspector]
+    public float Original_Walk_Speed;
+
     [SerializeField]
     public Animator Monster_Animator;
+
+    [SerializeField]
+    public GameObject Monster_Growl_Parent_Object;
 
     [SerializeField]
     public AudioClip Monster_Growl_1_Clip;
@@ -43,6 +49,8 @@ public class Monster_Movement_Script : MonoBehaviour
     {
         Player_Object = GameObject.FindGameObjectWithTag("Player").transform;
         Mana_Crytal_Object = GameObject.FindGameObjectWithTag("Mana_Crystal").transform;
+
+        Original_Walk_Speed = Walk_Speed;
 
         if (Random.Range(0f, 1f) > 0.35f)
         {
@@ -146,5 +154,15 @@ public class Monster_Movement_Script : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void Pause_Monster()
+    {
+        Walk_Speed = 0;
+    }
+
+    public void Resume_Monster()
+    {
+        Walk_Speed = Original_Walk_Speed;
     }
 }
