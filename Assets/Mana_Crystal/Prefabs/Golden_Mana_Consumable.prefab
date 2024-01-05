@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e62b792abe3cb4c4588957e74fbaa907, type: 2}
+  - {fileID: 2100000, guid: 196416fbc8587d8438b6f1b167de09d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 1465186225277536898}
   - component: {fileID: 3221225382328312995}
   m_Layer: 0
-  m_Name: Mana_Consumable
+  m_Name: Golden_Mana_Consumable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,5 +182,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bfcc12fc914f89459f951ab86aee3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mana_Give_Amount: 10
-  Mana_Colour: Blue
+  Mana_Give_Amount: 50
+  Mana_Colour: Golden

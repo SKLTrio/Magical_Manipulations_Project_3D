@@ -12,6 +12,9 @@ public class Shield_Ability_Script : MonoBehaviour
     public float Shield_Cooldown_Period;
 
     [SerializeField]
+    public float Spawn_Distance;
+
+    [SerializeField]
     public float Mana_Cost;
 
     [SerializeField]
@@ -21,7 +24,7 @@ public class Shield_Ability_Script : MonoBehaviour
     Player_Mana_Script Mana_Amount_Script;
 
     [HideInInspector]
-    public float Last_Shield_Placed;
+    public float Last_Shield_Placed = 0f;
 
     private void Start()
     {
@@ -30,18 +33,19 @@ public class Shield_Ability_Script : MonoBehaviour
 
     public void Update()
     {
-        if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= Last_Shield_Placed + Shield_Cooldown_Period)
+        if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= Last_Shield_Placed)
         {
             if (Mana_Amount_Script.Current_Mana_Amount >= Mana_Cost)
             {
                 Spawn_Shield();
+                Last_Shield_Placed += Shield_Cooldown_Period;
             }
         }
     }
 
     public void Spawn_Shield()
     {
-        Vector3 Shield_Spawn_Position = Player_Object.transform.position + Player_Object.transform.forward;
+        Vector3 Shield_Spawn_Position = Player_Object.transform.position + Player_Object.transform.forward * Spawn_Distance;
 
         Quaternion Shield_Spawn_Rotation = Player_Object.transform.rotation;
 

@@ -5998,7 +5998,9 @@ MonoBehaviour:
   Mana_Increase_Amount: 1
   Mana_Slider: {fileID: 2106112695}
   Mana_Added_UI_Image: {fileID: 1540780943}
+  Golden_Mana_Added_UI_Image: {fileID: 1876255785}
   Can_Turn_Blue: 0
+  Can_Turn_Gold: 0
 --- !u!1 &306571552
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,6 +6289,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 317927174}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &319026105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319026106}
+  m_Layer: 5
+  m_Name: Player_Golden_Mana_Added_Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &319026106
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319026105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1876255784}
+  m_Father: {fileID: 1999445132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &320124111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7114,16 +7152,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mana_Consumable_Prefab: {fileID: 7916897290365009351, guid: 51fe473860e3b32409d19fc4ef1dc1e7,
     type: 3}
+  Golden_Mana_Consumable_Prefab: {fileID: 7916897290365009351, guid: 0d705613d83a0674f9b1b31924d0e833,
+    type: 3}
   Crystal_Health_Script: {fileID: 361553149}
   Spawn_Positions:
-  - {x: 5, y: 0, z: 0}
-  - {x: 0, y: 0, z: 5}
-  - {x: -5, y: 0, z: 0}
-  - {x: 0, y: 0, z: -5}
-  - {x: 2.5, y: 0, z: 2.5}
-  - {x: 2.5, y: 0, z: -2.5}
-  - {x: -2.5, y: 0, z: 2.5}
-  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 5, y: 0.5, z: 0}
+  - {x: 0, y: 0.5, z: 5}
+  - {x: -5, y: 0.5, z: 0}
+  - {x: 0, y: 0.5, z: -5}
+  - {x: 2.5, y: 0.5, z: 2.5}
+  - {x: 2.5, y: 0.5, z: -2.5}
+  - {x: -2.5, y: 0.5, z: 2.5}
+  - {x: -2.5, y: 0.5, z: -2.5}
   Spawn_Time: 0
   Can_Spawn: 0
 --- !u!1001 &366552203
@@ -11939,7 +11979,7 @@ MonoBehaviour:
   Wand_Damage: 25
   Mana_Cost: 10
   Mana_Orb_Speed: 25
-  Wand_Shoot_Delay: 0.5
+  Wand_Shoot_Delay: 0.75
   Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
   Next_Time_To_Shoot: 0
@@ -13018,7 +13058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Explosion_PS: {fileID: 1012705153}
   Mana_Cost: 50
-  Explosion_Cooldown_Period: 2
+  Explosion_Cooldown_Period: 20
   Particle_Collider: {fileID: 736821651}
   Player_Camera_Container: {fileID: 1705222978}
   Screen_Shake_Duration: 0.25
@@ -14292,7 +14332,7 @@ MonoBehaviour:
     type: 3}
   Mana_Cost: 15
   Mana_Orb_Speed: 25
-  Wand_Shoot_Delay: 0.5
+  Wand_Shoot_Delay: 0.75
   Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
   Next_Time_To_Shoot: 0
@@ -27012,7 +27052,7 @@ MonoBehaviour:
     type: 3}
   Mana_Cost: 10
   Mana_Orb_Speed: 25
-  Wand_Shoot_Delay: 0.5
+  Wand_Shoot_Delay: 0.75
   Mana_Amount_Script: {fileID: 305964462}
   Current_Orb: {fileID: 0}
   Next_Time_To_Shoot: 0
@@ -27542,7 +27582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shield_Placed_Prefab: {fileID: 2423860622800418893, guid: 46071484a5a8b974a8b158d3f3792210,
     type: 3}
-  Shield_Cooldown_Period: 5
+  Shield_Cooldown_Period: 3
+  Spawn_Distance: 4
   Mana_Cost: 20
   Player_Object: {fileID: 305964455}
   Last_Shield_Placed: 0
@@ -28292,7 +28333,7 @@ GameObject:
   - component: {fileID: 1540780944}
   - component: {fileID: 1540780943}
   m_Layer: 5
-  m_Name: Damage_Taken_Panel_Image
+  m_Name: Mana_Added_Panel_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33498,6 +33539,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1873898398}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1876255783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1876255784}
+  - component: {fileID: 1876255786}
+  - component: {fileID: 1876255785}
+  m_Layer: 5
+  m_Name: Golden_Mana_Added_Panel_Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1876255784
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876255783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 319026106}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 450}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1876255785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876255783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.7530705, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 40b4e8db1d4dcde4688ee322f8be135f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1876255786
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876255783}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1876672573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34928,6 +35044,7 @@ RectTransform:
   m_Children:
   - {fileID: 1807536324}
   - {fileID: 157031574}
+  - {fileID: 319026106}
   - {fileID: 1988888344}
   - {fileID: 2106112694}
   - {fileID: 681404308}
