@@ -416,6 +416,7 @@ MonoBehaviour:
   Monster_Target: {fileID: 0}
   Original_Walk_Speed: 0
   Monster_Animator: {fileID: 6854198516667659176}
+  Monster_Growl_Parent_Object: {fileID: 0}
   Monster_Growl_1_Clip: {fileID: 8300000, guid: 8565e0d465bd4f94492085628f8efcd3,
     type: 3}
   Monster_Growl_2_Clip: {fileID: 8300000, guid: ee3bd65ba4f53c04c988d59d91321a3b,
@@ -459,7 +460,7 @@ MonoBehaviour:
   Monster_Original_Model: {fileID: 4536849177000734104}
   Monster_Red_Model: {fileID: 467198700502743979}
   Monster_Purple_Model: {fileID: 4839841207852914236}
-  Monster_Damage_Indicator: {fileID: 3211230244836334436}
+  Monster_Damage_Indicator: {fileID: 7048129044825576913}
   Monster_Damage_Indicator_Text: {fileID: 2552546073013396531}
   Poison_Damage: 20
   Damage_Done: 0

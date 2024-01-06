@@ -20,6 +20,9 @@ public class Shield_Ability_Script : MonoBehaviour
     [SerializeField]
     public GameObject Player_Object;
 
+    [SerializeField]
+    public Menu_Controller Menu_Controller_Script;
+
     [HideInInspector]
     Player_Mana_Script Mana_Amount_Script;
 
@@ -37,8 +40,14 @@ public class Shield_Ability_Script : MonoBehaviour
         {
             if (Mana_Amount_Script.Current_Mana_Amount >= Mana_Cost)
             {
-                Spawn_Shield();
-                Last_Shield_Placed += Shield_Cooldown_Period;
+                if (!Menu_Controller_Script.Is_Game_Paused)
+                {
+                    if (!Menu_Controller_Script.Is_Game_Done)
+                    {
+                        Spawn_Shield();
+                        Last_Shield_Placed += Shield_Cooldown_Period;
+                    }
+                }
             }
         }
     }

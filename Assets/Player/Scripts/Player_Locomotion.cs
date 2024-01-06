@@ -34,11 +34,11 @@ public class Player_Locomotion : MonoBehaviour
     private bool Is_Grounded;
     private bool Is_Sprinting;
 
-    //[SerializeField]
-    //public GameManager Game_Manager;
+    [SerializeField]
+    public GameManager Game_Manager;
 
-    //[SerializeField]
-    //public Menu_Controller Menu_Controller_Script;
+    [SerializeField]
+    public Menu_Controller Menu_Controller_Script;
 
     public void On_Move(InputAction.CallbackContext Context)
     {
@@ -63,8 +63,6 @@ public class Player_Locomotion : MonoBehaviour
     public void Start()
     {
         Time.timeScale = 1.0f;
-        //GameObject Menu_Controller_Object = GameObject.FindWithTag("Menu_Controller");
-        //Menu_Controller_Script = Menu_Controller_Object.GetComponent<Menu_Controller>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -77,7 +75,13 @@ public class Player_Locomotion : MonoBehaviour
 
     private void LateUpdate()
     {
-        Look();
+        if (!Menu_Controller_Script.Is_Game_Paused)
+        {
+            if (Menu_Controller_Script.Is_Game_Done == false)
+            {
+                Look();
+            }
+        }
     }
 
     private void Move()

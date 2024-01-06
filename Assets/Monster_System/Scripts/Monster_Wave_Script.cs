@@ -33,107 +33,71 @@ public class Monster_Wave_Script : MonoBehaviour
     public int Wave_Count;
 
     [SerializeField]
+    public float Wave_Timer;
+
+    [SerializeField]
+    public float Time_Between_Waves;
+
+    [SerializeField]
     public TextMeshProUGUI Monster_Count_Text;
 
-    [SerializeField]
-    public TextMeshProUGUI Monster_Prepare_Text;
 
-    [SerializeField]
-    public TextMeshProUGUI Monster_Wave_Text;
-
-    [SerializeField]
-    public TextMeshProUGUI UI_Wave_Text;
-
-    [HideInInspector]
-    public bool Is_Spawning = false;
-
-    [HideInInspector]
-    public bool Is_First_Wave = false;
-
-    [HideInInspector]
-    public bool Is_Second_Wave = false;
-
-    [HideInInspector]
-    public bool Is_Third_Wave = false;
-
-    [HideInInspector]
-    public bool Next_Wave = false;
 
     public void Start()
     {
+        Wave_Timer = 90;
         Max_Monster_Count = 0;
         Monster_Count = 0;
-        Wave_Count = 0;
-        StartCoroutine("Wave_First_Timer"); 
+        Wave_Count = 1;
+        Debug.Log("Start Wave #1");
+        Start_Wave(10, 15);
     }
 
     public void Update()
     {
-        UI_Wave_Text.text = "Wave: " + (Wave_Count + 1).ToString();
+        Monster_Count_Text.text = Monster_Count.ToString();
 
-        Monster_Count_Text.text = "x " + Monster_Count.ToString();
-
-        if (Wave_Count == 1 && !Is_Spawning && Is_Second_Wave)
+        if (Monster_Count == 0 && Time.time > Wave_Timer)
         {
-            StartCoroutine("Wave_Second_Timer");
+            Wave_Timer = 10f;
+            StartCoroutine(Start_Wave_Timer(Wave_Timer));
+            Debug.Log("Wave Timer Shortened");
         }
 
-        if (Wave_Count == 2 && !Is_Spawning && Is_Third_Wave)
+        if (Wave_Count == 2)
         {
-            StartCoroutine("Wave_Third_Timer");
+            Wave_Timer = 180f;
+            Start_Wave(20, 30);
+            Debug.Log("Start Wave #2");
+
+        }
+
+        else if (Wave_Count == 3)
+        {
+            Wave_Timer = 240f;
+            Start_Wave(35, 45);
+            Debug.Log("Start Wave #3");
+        }
+
+        else if (Wave_Count == 4)
+        {
+            Debug.Log("Waves Finished");
         }
     }
 
-    public void First_Wave()
+    public void Start_Wave(int Lower_Range_Num, int Higher_Range_Num)
     {
         Debug.Log("First_Wave Started");
 
         Max_Monster_Count = 0;
 
-        Wave_Count++;
-
-        int Random_Monster_Count = Random.Range(1, 2); //Original: 5, 11
+        int Random_Monster_Count = Random.Range(Lower_Range_Num, Higher_Range_Num); //Original: 5, 11
 
         Max_Monster_Count += Random_Monster_Count;
-
-        Monster_Count = 0;
 
         InvokeRepeating("Spawn_Monster", 0f, Random.Range(1, 4));
     }
 
-    public void Second_Wave()
-    {
-        Debug.Log("Second_Wave Started");
-
-        Max_Monster_Count = 0;
-
-        Wave_Count++;
-
-        int Random_Monster_Count = Random.Range(2, 3); //Original: 15, 30
-
-        Max_Monster_Count += Random_Monster_Count;
-
-        Monster_Count = 0;
-
-        InvokeRepeating("Spawn_Monster", 0f, Random.Range(1, 4));
-    }
-
-    public void Third_Wave()
-    {
-        Debug.Log("Third_Wave Started");
-
-        Max_Monster_Count = 0;
-
-        Wave_Count++;
-
-        int Random_Monster_Count = Random.Range(3, 4); //Original: 35, 40
-
-        Max_Monster_Count += Random_Monster_Count;
-
-        Monster_Count = 0;
-
-        InvokeRepeating("Spawn_Monster", 0f, Random.Range(1, 4));
-    }
 
     public void Spawn_Monster()
     {
@@ -167,21 +131,8 @@ public class Monster_Wave_Script : MonoBehaviour
             if (Monster_Count >= Max_Monster_Count)
             {
                 CancelInvoke("Spawn_Monster");
-
-                if (Is_First_Wave)
-                {
-                    Is_First_Wave = false;
-                    Is_Second_Wave = true;
-                }
-                else if (Is_Second_Wave)
-                {
-                    Is_Second_Wave = false;
-                    Is_Third_Wave = true;
-                }
-                else if (Is_Third_Wave)
-                {
-                    Is_Third_Wave = false;
-                }
+                Debug.Log("Spawning Finished");
+                StartCoroutine(Start_Wave_Timer(Wave_Timer));
             }
         }
     }
@@ -198,73 +149,9 @@ public class Monster_Wave_Script : MonoBehaviour
         Spawn_Z_Position = Random_Spawning_Point.z;
     }
 
-    public IEnumerator Wave_First_Timer()
+    public IEnumerator Start_Wave_Timer(float Time_Between_Waves)
     {
-        Is_First_Wave = true;
-
-        Debug.Log("Wave_First_Timer Called");
-
-        Monster_Prepare_Text.text = "Prepare to defend the Mana Crystal!";
-        Monster_Prepare_Text.gameObject.SetActive(true);
-        Debug.Log("Prepare Text Done");
-
-        yield return new WaitForSeconds(2f); // original: 10
-
-        Monster_Prepare_Text.gameObject.SetActive(false);
-
-        yield return new WaitForSeconds(0.5f);
-
-        Monster_Wave_Text.text = "First Wave Incoming!";
-        Monster_Wave_Text.gameObject.SetActive(true);
-        Debug.Log("Wave Text Done");
-
-        yield return new WaitForSeconds(2f);
-
-        Monster_Wave_Text.gameObject.SetActive(false);
-
-        StartCoroutine("First_Wave");
+        yield return new WaitForSeconds(Time_Between_Waves);
+        Wave_Count++;
     }
-
-    public IEnumerator Wave_Second_Timer()
-    {
-        Debug.Log("Wave_Second_Timer Called");
-
-        yield return new WaitForSeconds(0.5f);
-
-        Monster_Wave_Text.text = "First Wave Ended!";
-        Monster_Wave_Text.gameObject.SetActive(true);
-
-        yield return new WaitForSeconds(2f); // original: 15
-
-        Monster_Wave_Text.text = "Second Wave Incoming!";
-        Monster_Wave_Text.gameObject.SetActive(true);
-
-        yield return new WaitForSeconds(2f);
-
-        Monster_Wave_Text.gameObject.SetActive(false);
-
-        StartCoroutine("Second_Wave");
-    }
-
-    public IEnumerator Wave_Third_Timer()
-    {
-        Debug.Log("Wave_Third_Timer Called");
-
-        yield return new WaitForSeconds(0.5f);
-
-        Monster_Wave_Text.text = "Second Wave Ended!";
-        Monster_Wave_Text.gameObject.SetActive(true);
-
-        yield return new WaitForSeconds(2f); // original: 15
-
-        Monster_Wave_Text.text = "Final Wave Incoming!";
-        Monster_Wave_Text.gameObject.SetActive(true);
-
-        yield return new WaitForSeconds(2f);
-
-        Monster_Wave_Text.gameObject.SetActive(false);
-
-        StartCoroutine("Third_Wave");
-    }
-
 }

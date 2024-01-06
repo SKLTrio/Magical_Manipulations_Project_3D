@@ -32,6 +32,9 @@ public class Explosion_Ability_Script : MonoBehaviour
     [SerializeField]
     public Player_Mana_Script Mana_Amount_Script;
 
+    [SerializeField]
+    public Menu_Controller Menu_Controller_Script;
+
     [HideInInspector]
     public float Last_Explosion;
 
@@ -53,8 +56,14 @@ public class Explosion_Ability_Script : MonoBehaviour
         {
             if (Mana_Amount_Script.Current_Mana_Amount >= Mana_Cost)
             {
-                Start_Explosion();
-                Last_Explosion = Time.time;
+                if (!Menu_Controller_Script.Is_Game_Paused)
+                {
+                    if (!Menu_Controller_Script.Is_Game_Done)
+                    {
+                        Start_Explosion();
+                        Last_Explosion = Time.time;
+                    }
+                }
             }  
         }
     }

@@ -14,6 +14,9 @@ public class Magical_Ability_Switch_Interface : MonoBehaviour
     [SerializeField]
     public GameObject[] Ability_Ammo_Image;
 
+    [SerializeField]
+    public Menu_Controller Menu_Controller_Script;
+
     public void Start()
     {
         Select_Ability();
@@ -21,39 +24,45 @@ public class Magical_Ability_Switch_Interface : MonoBehaviour
 
     public void Update()
     {
-        int Previously_Selected_Ability = Selected_Ability;
-
-        float Scroll_Wheel_Value = Input.mouseScrollDelta.y;
-
-        if (Scroll_Wheel_Value < 0f)
+        if (!Menu_Controller_Script.Is_Game_Paused)
         {
-            if (Selected_Ability >= transform.childCount - 1)
+            if (!Menu_Controller_Script.Is_Game_Done)
             {
-                Selected_Ability = 0;
-            }
+                int Previously_Selected_Ability = Selected_Ability;
 
-            else
-            {
-                Selected_Ability++;
-            }
-        }
+                float Scroll_Wheel_Value = Input.mouseScrollDelta.y;
 
-        if (Scroll_Wheel_Value > 0f)
-        {
-            if (Selected_Ability <= 0)
-            {
-                Selected_Ability = transform.childCount - 1;
-            }
+                if (Scroll_Wheel_Value < 0f)
+                {
+                    if (Selected_Ability >= transform.childCount - 1)
+                    {
+                        Selected_Ability = 0;
+                    }
 
-            else
-            {
-                Selected_Ability--;
-            }
-        }
+                    else
+                    {
+                        Selected_Ability++;
+                    }
+                }
 
-        if (Previously_Selected_Ability != Selected_Ability)
-        {
-            Select_Ability();
+                if (Scroll_Wheel_Value > 0f)
+                {
+                    if (Selected_Ability <= 0)
+                    {
+                        Selected_Ability = transform.childCount - 1;
+                    }
+
+                    else
+                    {
+                        Selected_Ability--;
+                    }
+                }
+
+                if (Previously_Selected_Ability != Selected_Ability)
+                {
+                    Select_Ability();
+                }
+            }
         }
     }
 

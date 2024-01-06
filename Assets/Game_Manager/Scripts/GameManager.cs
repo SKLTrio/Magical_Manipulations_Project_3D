@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [HideInInspector]
+    public static GameManager Instance { get; private set; }
+
+    [SerializeField]
+    public Texture2D Cursor_Texture;
+
     void Start()
     {
-        
+        Cursor.SetCursor(Cursor_Texture, Vector2.zero, CursorMode.ForceSoftware);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
