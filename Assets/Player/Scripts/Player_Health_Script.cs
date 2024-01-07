@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class Player_Health_Script : MonoBehaviour
 {
@@ -39,6 +40,9 @@ public class Player_Health_Script : MonoBehaviour
     public GameObject UI_Life_3;
 
     [SerializeField]
+    public TextMeshProUGUI Health_Text;
+
+    [SerializeField]
     public Player_Mana_Script Mana_Script;
 
     [HideInInspector]
@@ -50,8 +54,8 @@ public class Player_Health_Script : MonoBehaviour
     [HideInInspector]
     public List<Monster_Movement_Script> Current_Monsters = new List<Monster_Movement_Script>();
 
-    //[SerializeField]
-    //public Menu_Controller_Script Menu_Controller;
+    [SerializeField]
+    public Menu_Controller Menu_Controller_Script;
 
     public void Start()
     {
@@ -62,6 +66,8 @@ public class Player_Health_Script : MonoBehaviour
 
     public void Update()
     {
+        Health_Text.text = Current_Health.ToString() + "/100";
+
         if (Current_Health < 0)
         {
             Current_Health = 0;
@@ -242,9 +248,7 @@ public class Player_Health_Script : MonoBehaviour
     public void On_Death()
     {
         Debug.Log("GAME OVER - YOU DIED");
-        Time.timeScale = 0f;
-        //Menu_Controller_Script.Open_Death_Panel();
+        Menu_Controller_Script.Open_Game_Over_Panel();
     }
-
 }
 

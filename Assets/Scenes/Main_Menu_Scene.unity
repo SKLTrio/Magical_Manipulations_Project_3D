@@ -26649,6 +26649,9 @@ MonoBehaviour:
   Game_Over_Panel: {fileID: 0}
   HUD: {fileID: 522792951}
   Options_Button: {fileID: 2049916956}
+  Gameplay_Music: {fileID: 8300000, guid: a06799226407f12458150494de9d1c06, type: 3}
+  Menu_Music: {fileID: 8300000, guid: 7400141320eea5f4e96f40eed64799ca, type: 3}
+  Game_Music: {fileID: 94464134}
   Is_Pause_Menu_Available: 0
   Is_Game_Paused: 0
   Is_Game_Done: 0

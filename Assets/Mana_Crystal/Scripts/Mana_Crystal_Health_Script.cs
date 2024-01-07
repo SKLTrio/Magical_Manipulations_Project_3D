@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class Mana_Crystal_Health_Script : MonoBehaviour
 {
@@ -17,6 +18,12 @@ public class Mana_Crystal_Health_Script : MonoBehaviour
     [SerializeField]
     public Slider Health_Slider;
 
+    [SerializeField]
+    public TextMeshProUGUI Health_Text;
+
+    [SerializeField]
+    public Menu_Controller Menu_Controller_Script;
+
     public void Start()
     {
         Current_Health = Max_Health;
@@ -24,6 +31,8 @@ public class Mana_Crystal_Health_Script : MonoBehaviour
 
     public void Update()
     {
+        Health_Text.text = Current_Health.ToString() + "/100";
+
         if (Current_Health < 0)
         {
             Current_Health = 0;
@@ -61,6 +70,6 @@ public class Mana_Crystal_Health_Script : MonoBehaviour
     public void On_Death()
     {
         Debug.Log("GAME OVER - The Crystal Died");
-        //Menu_Controller_Script.Open_Death_Panel();
+        Menu_Controller_Script.Open_Game_Over_Panel();
     }
 }

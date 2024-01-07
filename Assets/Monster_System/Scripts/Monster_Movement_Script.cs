@@ -16,6 +16,9 @@ public class Monster_Movement_Script : MonoBehaviour
     [SerializeField]
     public float Obstacle_Avoidance_Distance;
 
+    [SerializeField]
+    public float Time_Before_Moving;
+
     [HideInInspector]
     public Transform Player_Object;
 
@@ -43,12 +46,17 @@ public class Monster_Movement_Script : MonoBehaviour
     [SerializeField]
     public AudioClip Monster_Growl_2_Clip;
 
+    [SerializeField]
+    public Menu_Controller Menu_Controller_Script;
+
     private float Monster_Y_Position;
 
     public void Start()
     {
         Player_Object = GameObject.FindGameObjectWithTag("Player").transform;
         Mana_Crytal_Object = GameObject.FindGameObjectWithTag("Mana_Crystal").transform;
+        GameObject Menu_Controller_Obj = GameObject.FindGameObjectWithTag("Menu_Controller");
+        Menu_Controller_Script = Menu_Controller_Obj.GetComponent<Menu_Controller>();
 
         Original_Walk_Speed = Walk_Speed;
 
@@ -90,18 +98,21 @@ public class Monster_Movement_Script : MonoBehaviour
             }
         }
 
-        if (Random.Range(1, 500) == Random.Range(1, 500))
+        if (!Menu_Controller_Script.Is_Game_Done)
         {
-            int Random_Monster_Audio_Clip = Random.Range(0, 2);
-
-            if (Random_Monster_Audio_Clip == 0)
+            if (Random.Range(1, 500) == Random.Range(1, 500))
             {
-                AudioSource.PlayClipAtPoint(Monster_Growl_1_Clip, transform.position);
-            }
+                int Random_Monster_Audio_Clip = Random.Range(0, 2);
 
-            else
-            {
-                AudioSource.PlayClipAtPoint(Monster_Growl_2_Clip, transform.position);
+                if (Random_Monster_Audio_Clip == 0)
+                {
+                    AudioSource.PlayClipAtPoint(Monster_Growl_1_Clip, transform.position);
+                }
+
+                else
+                {
+                    AudioSource.PlayClipAtPoint(Monster_Growl_2_Clip, transform.position);
+                }
             }
         }
     }

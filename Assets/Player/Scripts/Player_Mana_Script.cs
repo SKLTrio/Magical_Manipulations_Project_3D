@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
-
+using TMPro;
 
 public class Player_Mana_Script : MonoBehaviour
 {
@@ -27,6 +27,9 @@ public class Player_Mana_Script : MonoBehaviour
     [SerializeField]
     public Image Golden_Mana_Added_UI_Image;
 
+    [SerializeField]
+    public TextMeshProUGUI Mana_Text;
+
     [HideInInspector]
     public bool Can_Turn_Blue = false;
 
@@ -42,6 +45,8 @@ public class Player_Mana_Script : MonoBehaviour
 
     public void Update()
     {
+        Mana_Text.text = Current_Mana_Amount.ToString("N0") + "/100";
+
         if (Current_Mana_Amount <= 0)
         {
             Current_Mana_Amount = 0;

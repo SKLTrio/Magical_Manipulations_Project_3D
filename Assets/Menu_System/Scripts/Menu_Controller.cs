@@ -54,6 +54,21 @@ public class Menu_Controller : MonoBehaviour
     public GameObject Options_Button;
 
     [SerializeField]
+    public AudioClip Gameplay_Music;
+
+    [SerializeField]
+    public AudioClip Menu_Music;
+
+    [SerializeField]
+    public AudioSource Game_Music;
+
+    [SerializeField]
+    public AudioClip Win_Sound;
+
+    [SerializeField]
+    public AudioClip Game_Over_Sound;
+
+    [SerializeField]
     public bool Is_Pause_Menu_Available = false;
 
     [SerializeField]
@@ -68,14 +83,17 @@ public class Menu_Controller : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (Is_Game_Paused)
+                if (!Is_Game_Done)
                 {
-                    Resume_Game();
-                }
+                    if (Is_Game_Paused)
+                    {
+                        Resume_Game();
+                    }
 
-                else
-                {
-                    Pause_Game();
+                    else
+                    {
+                        Pause_Game();
+                    }
                 }
             }
         }
@@ -88,6 +106,7 @@ public class Menu_Controller : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Is_Game_Paused = true;
         Time.timeScale = 0f;
+        Play_Menu_Music();
     }
 
     public void Resume_Game()
@@ -97,10 +116,13 @@ public class Menu_Controller : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Is_Game_Paused = false;
         Time.timeScale = 1f;
+        Play_Gameplay_Music();
     }
 
     public void Start_Game()
     {
+        Is_Game_Done = false;
+        Is_Game_Paused = false;
         Cursor.lockState = CursorLockMode.Locked;
         HUD.SetActive(true);
         Cursor.visible = false;
@@ -209,6 +231,8 @@ public class Menu_Controller : MonoBehaviour
     public void Open_Game_Over_Panel()
     {
         Time.timeScale = 0f;
+        Game_Music.Stop();
+        Game_Music.PlayOneShot(Game_Over_Sound);
         Is_Game_Done = true;
         HUD.SetActive(false);
         Cursor.visible = true;
@@ -219,10 +243,26 @@ public class Menu_Controller : MonoBehaviour
     public void Open_Win_Panel()
     {
         Time.timeScale = 0f;
+        Game_Music.Stop();
+        Game_Music.PlayOneShot(Win_Sound);
         Is_Game_Done = true;
         HUD.SetActive(false);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Win_Panel.SetActive(true);
+    }
+
+    public void Play_Gameplay_Music()
+    {
+        Game_Music.Stop();
+        Game_Music.clip = Gameplay_Music;
+        Game_Music.Play();
+    }
+
+    public void Play_Menu_Music()
+    {
+        Game_Music.Stop();
+        Game_Music.clip = Menu_Music;
+        Game_Music.Play();
     }
 }

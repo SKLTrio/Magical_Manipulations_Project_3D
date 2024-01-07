@@ -8,6 +8,7 @@ TagManager:
   - Monster_Obstacle
   - Monster
   - Wave_Spawner
+  - Menu_Controller
   layers:
   - Default
   - TransparentFX

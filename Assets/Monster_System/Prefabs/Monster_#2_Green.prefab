@@ -727,12 +727,15 @@ MonoBehaviour:
   Walk_Speed: 8
   Turn_Speed: 2.5
   Stopping_Radius: 6
-  Obstacle_Avoidance_Distance: 6
+  Obstacle_Avoidance_Distance: 8
+  Time_Before_Moving: 0
   Player_Object: {fileID: 0}
   Mana_Crytal_Object: {fileID: 0}
   Monster_Target: {fileID: 0}
   Original_Walk_Speed: 0
+  Last_Move_Time: 0
   Monster_Animator: {fileID: 2721369900606967119}
+  Monster_Growl_Parent_Object: {fileID: 0}
   Monster_Growl_1_Clip: {fileID: 8300000, guid: 8565e0d465bd4f94492085628f8efcd3,
     type: 3}
   Monster_Growl_2_Clip: {fileID: 8300000, guid: ee3bd65ba4f53c04c988d59d91321a3b,

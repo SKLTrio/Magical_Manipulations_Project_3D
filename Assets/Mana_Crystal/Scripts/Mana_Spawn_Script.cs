@@ -43,13 +43,13 @@ public class Mana_Spawn_Script : MonoBehaviour
                 StartCoroutine("Spawn_Mana_Consumable");
             }
 
-            else if (Crystal_Health_Script.Current_Health < 50 && Crystal_Health_Script.Current_Health >= 25)
+            else if (Crystal_Health_Script.Current_Health < 50 && Crystal_Health_Script.Current_Health >= 20)
             {
-                Spawn_Time = Random.Range(20, 41);
+                Spawn_Time = Random.Range(20, 36);
                 StartCoroutine("Spawn_Mana_Consumable");
             }
 
-            else if (Crystal_Health_Script.Current_Health < 25)
+            else if (Crystal_Health_Script.Current_Health < 20)
             {
                 Can_Spawn = false;
             }

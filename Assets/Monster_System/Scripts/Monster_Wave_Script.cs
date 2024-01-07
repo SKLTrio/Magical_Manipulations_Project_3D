@@ -23,85 +23,53 @@ public class Monster_Wave_Script : MonoBehaviour
     [HideInInspector]
     public GameObject Monster_Type;
 
-    [HideInInspector]
-    public int Max_Monster_Count;
-
     [SerializeField]
     public int Monster_Count;
 
     [SerializeField]
-    public int Wave_Count;
-
-    [SerializeField]
-    public float Wave_Timer;
-
-    [SerializeField]
-    public float Time_Between_Waves;
-
-    [SerializeField]
     public TextMeshProUGUI Monster_Count_Text;
 
-
+    [SerializeField]
+    public TextMeshProUGUI Monster_UI_Text;
 
     public void Start()
     {
-        Wave_Timer = 90;
-        Max_Monster_Count = 0;
         Monster_Count = 0;
-        Wave_Count = 1;
-        Debug.Log("Start Wave #1");
-        Start_Wave(10, 15);
+        Monster_UI_Text.gameObject.SetActive(false);
+        
+        Debug.Log("Starting Wave");
+
+        StartCoroutine("Start_Spawning");
+
+        InvokeRepeating("Spawn_Monster", 20f, Random.Range(3, 8));
     }
 
     public void Update()
     {
         Monster_Count_Text.text = Monster_Count.ToString();
-
-        if (Monster_Count == 0 && Time.time > Wave_Timer)
-        {
-            Wave_Timer = 10f;
-            StartCoroutine(Start_Wave_Timer(Wave_Timer));
-            Debug.Log("Wave Timer Shortened");
-        }
-
-        if (Wave_Count == 2)
-        {
-            Wave_Timer = 180f;
-            Start_Wave(20, 30);
-            Debug.Log("Start Wave #2");
-
-        }
-
-        else if (Wave_Count == 3)
-        {
-            Wave_Timer = 240f;
-            Start_Wave(35, 45);
-            Debug.Log("Start Wave #3");
-        }
-
-        else if (Wave_Count == 4)
-        {
-            Debug.Log("Waves Finished");
-        }
     }
 
-    public void Start_Wave(int Lower_Range_Num, int Higher_Range_Num)
+    public IEnumerator Start_Spawning()
     {
-        Debug.Log("First_Wave Started");
-
-        Max_Monster_Count = 0;
-
-        int Random_Monster_Count = Random.Range(Lower_Range_Num, Higher_Range_Num); //Original: 5, 11
-
-        Max_Monster_Count += Random_Monster_Count;
-
-        InvokeRepeating("Spawn_Monster", 0f, Random.Range(1, 4));
+        Debug.Log("Spawning Started");
+        yield return new WaitForSeconds(2f);
+        Monster_UI_Text.text = "Prepare to defend the Mana Crystal!";
+        Monster_UI_Text.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        Monster_UI_Text.gameObject.SetActive(false);
+        yield return new WaitForSeconds(5f);
+        Monster_UI_Text.color = Color.red;
+        Monster_UI_Text.text = "Monsters Incoming!";
+        Monster_UI_Text.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        Monster_UI_Text.gameObject.SetActive(false);
+        Spawn_Pre_Game_Monsters();
     }
 
 
     public void Spawn_Monster()
     {
-        if (Monster_Count < Max_Monster_Count && Monster_Spawning_Points != null && Monster_Spawning_Points.Count > 0)
+        if (Monster_Spawning_Points != null && Monster_Spawning_Points.Count > 0)
         {
 
             Random_Position_And_Type();
@@ -127,13 +95,6 @@ public class Monster_Wave_Script : MonoBehaviour
             }
 
             Monster_Count += 1;
-
-            if (Monster_Count >= Max_Monster_Count)
-            {
-                CancelInvoke("Spawn_Monster");
-                Debug.Log("Spawning Finished");
-                StartCoroutine(Start_Wave_Timer(Wave_Timer));
-            }
         }
     }
 
@@ -149,9 +110,16 @@ public class Monster_Wave_Script : MonoBehaviour
         Spawn_Z_Position = Random_Spawning_Point.z;
     }
 
-    public IEnumerator Start_Wave_Timer(float Time_Between_Waves)
+    public void Spawn_Pre_Game_Monsters()
     {
-        yield return new WaitForSeconds(Time_Between_Waves);
-        Wave_Count++;
+        GameObject New_Monster = Instantiate(Monster_Type_Prefabs[0], new Vector3(-71.2f, 1.9f, -6.5f), Quaternion.identity);
+        New_Monster.transform.parent = Parent_Object;
+
+        Monster_Count++;
+
+        GameObject New_Monster_2 = Instantiate(Monster_Type_Prefabs[7], new Vector3(44.17f, 4.51f, 17.68f), Quaternion.identity);
+        New_Monster.transform.parent = Parent_Object;
+
+        Monster_Count++;
     }
 }
