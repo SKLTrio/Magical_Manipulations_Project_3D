@@ -77,6 +77,14 @@ public class Menu_Controller : MonoBehaviour
     [SerializeField]
     public bool Is_Game_Done = false;
 
+    [SerializeField]
+    public Texture2D Cursor_Texture;
+
+    public void Start()
+    {
+        Cursor.SetCursor(Cursor_Texture, Vector2.zero, CursorMode.ForceSoftware);
+    }
+
     public void Update()
     {
         if (Is_Pause_Menu_Available)
@@ -231,8 +239,7 @@ public class Menu_Controller : MonoBehaviour
     public void Open_Game_Over_Panel()
     {
         Time.timeScale = 0f;
-        Game_Music.Stop();
-        Game_Music.PlayOneShot(Game_Over_Sound);
+        Play_Game_Over_Sound();
         Is_Game_Done = true;
         HUD.SetActive(false);
         Cursor.visible = true;
@@ -243,8 +250,7 @@ public class Menu_Controller : MonoBehaviour
     public void Open_Win_Panel()
     {
         Time.timeScale = 0f;
-        Game_Music.Stop();
-        Game_Music.PlayOneShot(Win_Sound);
+        Play_Win_Sound();
         Is_Game_Done = true;
         HUD.SetActive(false);
         Cursor.visible = true;
@@ -256,6 +262,7 @@ public class Menu_Controller : MonoBehaviour
     {
         Game_Music.Stop();
         Game_Music.clip = Gameplay_Music;
+        Game_Music.loop = true;
         Game_Music.Play();
     }
 
@@ -263,6 +270,23 @@ public class Menu_Controller : MonoBehaviour
     {
         Game_Music.Stop();
         Game_Music.clip = Menu_Music;
+        Game_Music.loop = true;
+        Game_Music.Play();
+    }
+
+    public void Play_Win_Sound()
+    {
+        Game_Music.Stop();
+        Game_Music.clip = Win_Sound;
+        Game_Music.loop = false;
+        Game_Music.Play();
+    }
+
+    public void Play_Game_Over_Sound()
+    {
+        Game_Music.Stop();
+        Game_Music.clip = Game_Over_Sound;
+        Game_Music.loop = false;
         Game_Music.Play();
     }
 }

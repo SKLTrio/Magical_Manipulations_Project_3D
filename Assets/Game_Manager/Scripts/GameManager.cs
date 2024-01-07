@@ -12,19 +12,19 @@ public class GameManager : MonoBehaviour
     public Menu_Controller Menu_Controller_Script;
 
     [SerializeField]
+    public UI_Manager UI_Manager_Script;
+
+    [SerializeField]
     public Player_Health_Script Player_Health;
 
     [SerializeField]
-    public Texture2D Cursor_Texture;
-
-    [SerializeField]
-    public float Timer_Starting_Seconds;
-
-    [SerializeField]
-    public TextMeshProUGUI Game_Timer_Text;
+    public float Timer_Starting_Seconds = 360f;
 
     [HideInInspector]
     public float Current_Time;
+
+    [HideInInspector]
+    private float Starting_Timer_Amount;
 
     public void Awake()
     {
@@ -37,25 +37,17 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    public void Start()
-    {
-        Cursor.SetCursor(Cursor_Texture, Vector2.zero, CursorMode.ForceSoftware);
-    }
-
     public void Update()
     {
-        Current_Time = Timer_Starting_Seconds -= Time.deltaTime;
-        Update_Timer(Current_Time);
-
-        if (Current_Time <= 0 && Player_Health.Current_Health > 0)
+        if (!Menu_Controller_Script.Is_Game_Paused && !Menu_Controller_Script.Is_Game_Done)
         {
-            Menu_Controller_Script.Open_Win_Panel();
-        }
-    }
+            Current_Time = Timer_Starting_Seconds -= Time.deltaTime;
+            UI_Manager_Script.Update_Timer(Current_Time);
 
-    public void Update_Timer(float Current_Time)
-    {
-        int Seconds = (int)Current_Time;
-        Game_Timer_Text.text = System.TimeSpan.FromSeconds(Seconds).ToString("mm':'ss");
+            if (Current_Time <= 0 && Player_Health.Current_Health > 0)
+            {
+                Menu_Controller_Script.Open_Win_Panel();
+            }
+        }
     }
 }

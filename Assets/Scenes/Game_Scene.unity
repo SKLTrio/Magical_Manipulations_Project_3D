@@ -17929,7 +17929,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1053719800}
+      - m_Target: {fileID: 1464515784}
         m_TargetAssemblyTypeName: Audio_Manager, Assembly-CSharp
         m_MethodName: Set_Volume_Slider
         m_Mode: 0
@@ -25032,7 +25032,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1053719798}
   - component: {fileID: 1053719799}
-  - component: {fileID: 1053719800}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -25068,24 +25067,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu_Controller_Script: {fileID: 1464515781}
+  UI_Manager_Script: {fileID: 1464515783}
   Player_Health: {fileID: 305964461}
-  Cursor_Texture: {fileID: 2800000, guid: 07beb405be211ed4f8a11da9dacdc5b7, type: 3}
   Timer_Starting_Seconds: 360
-  Game_Timer_Text: {fileID: 1196228988}
   Current_Time: 0
---- !u!114 &1053719800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053719797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ec90df45d2269d44b0a35b7d1eb6ffc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Volume_Slider: {fileID: 876967975}
 --- !u!1001 &1064336691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30987,6 +30972,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1464515780}
   - component: {fileID: 1464515781}
+  - component: {fileID: 1464515783}
+  - component: {fileID: 1464515784}
   m_Layer: 0
   m_Name: Menu_Controller
   m_TagString: Menu_Controller
@@ -31045,6 +31032,33 @@ MonoBehaviour:
   Is_Pause_Menu_Available: 1
   Is_Game_Paused: 0
   Is_Game_Done: 0
+  Cursor_Texture: {fileID: 2800000, guid: 07beb405be211ed4f8a11da9dacdc5b7, type: 3}
+--- !u!114 &1464515783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464515779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73462741cbc9bb489ce88ada7669afd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game_Timer_Text: {fileID: 1196228988}
+--- !u!114 &1464515784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464515779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec90df45d2269d44b0a35b7d1eb6ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume_Slider: {fileID: 876967975}
 --- !u!1001 &1474593735
 PrefabInstance:
   m_ObjectHideFlags: 0

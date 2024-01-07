@@ -17663,10 +17663,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1187491877}
-  - component: {fileID: 1187491878}
   - component: {fileID: 1187491879}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Audio_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17687,19 +17686,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1187491878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187491876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f85205ffc684de44b80b911f4a33d93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cursor_Texture: {fileID: 2800000, guid: 07beb405be211ed4f8a11da9dacdc5b7, type: 3}
 --- !u!114 &1187491879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26652,9 +26638,12 @@ MonoBehaviour:
   Gameplay_Music: {fileID: 8300000, guid: a06799226407f12458150494de9d1c06, type: 3}
   Menu_Music: {fileID: 8300000, guid: 7400141320eea5f4e96f40eed64799ca, type: 3}
   Game_Music: {fileID: 94464134}
+  Win_Sound: {fileID: 8300000, guid: 0a85d7c7125749d4eb13b1feccfafba1, type: 3}
+  Game_Over_Sound: {fileID: 8300000, guid: c2dc363e7c9b04b48bc322af93602778, type: 3}
   Is_Pause_Menu_Available: 0
   Is_Game_Paused: 0
   Is_Game_Done: 0
+  Cursor_Texture: {fileID: 2800000, guid: 07beb405be211ed4f8a11da9dacdc5b7, type: 3}
 --- !u!1001 &1768470432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32235,8 +32224,8 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1187491877}
   - {fileID: 1765600336}
+  - {fileID: 1187491877}
   - {fileID: 94464133}
   - {fileID: 1180590615}
   - {fileID: 469104110}
